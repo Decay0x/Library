@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#addBtn {
+  margin-top: 12px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #096d03;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+dialog {
+  margin: 1rem auto;
+  width: 100%;
+  height: 100vh;
+  max-width: 1024px;
+  background-color: #6b0101;
+  color: #fff;
+  border-radius: 12px;
+}
+.form {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+}
+.inputs label {
+  flex: 1;
+}
+.inputs input {
+  flex: 2;
+  border-radius: 12px;
+  border: none;
+  padding: 5px;
+}
+input[type='radio'] {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none !important;
+  margin-left: 2px;
+}
+.inputs input:focus {
+  outline: none !important;
+}
+input[type='submit'] {
+  border: none;
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 180px;
+  border-radius: 20px;
+  background-color: #096d03;
+  color: #fff;
+  font-size: 1rem;
+}
+.booksContainer {
+  padding: 20px 50px;
+  border: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 260px);
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+}
+
+.book {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 1px 1px 16px 9px #00000085;
+  color: #fff;
+  background-color: #6b0101;
+}
+.book h4 {
+  font-size: 1.4rem;
+  letter-spacing: -1.2px;
+  word-spacing: 0.2px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-style: italic;
+}
+.book p {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  word-spacing: 0.2px;
+}
+.book .closeBtn {
+  font-size: 12px;
+  color: red;
+  align-self: flex-end;
+  padding: 1px 10px;
+  cursor: pointer;
+}
