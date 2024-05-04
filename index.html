@@ -13,22 +13,29 @@
         <form class="form" id="form">
           <div class="inputs">
             <label for="title">Book Title</label>
-            <input id="title" type="text" />
+            <input id="title" type="text" required />
           </div>
           <div class="inputs">
             <label for="author">Book Author</label>
-            <input id="author" type="text" />
+            <input id="author" type="text" pattern="[A-Za-z]]" required />
           </div>
           <div class="inputs">
             <label for="pages">Number of Pages</label>
-            <input id="pages" type="number" min="1" />
+            <input id="pages" type="number" min="10" required />
           </div>
           <fieldset id="read">
             <legend>Have you read it yet?</legend>
             <label for="yes">Yes</label>
-            <input id="yes" type="radio" name="read" value="yes" checked />
+            <input
+              id="yes"
+              type="radio"
+              name="read"
+              value="yes"
+              checked
+              required
+            />
             <label for="no">No</label>
-            <input id="no" type="radio" name="read" value="no" />
+            <input id="no" type="radio" name="read" value="no" required />
           </fieldset>
           <input type="submit" />
         </form>
